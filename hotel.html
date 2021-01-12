@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <link href="style1.csss" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+    <title>gogo travel</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+    body {
+        font-family: 'Kanit', sans-serif;
+        margin-left: 120px;
+        margin-right: 120px;
+        padding: 0%;
+    }
+    
+    .font-small {
+        background-color: #e1f5fe;
+    }
+    
+    .immm {
+        margin-top: 15px;
+        margin-left: 250px;
+        margin-right: 200px;
+    }
+    
+    .search-type-padding {
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    
+    button:hover {
+        transform: scale(1.1);
+    }
+    
+    li:hover {
+        transform: scale(1.2);
+    }
+    
+    .page-search-content {
+        width: 100%;
+        margin: 0px auto;
+        padding: 20px;
+        border: 1px solid rgb(203, 209, 216);
+        background: rgb(154, 209, 209);
+        border-radius: 0px 0px 0px 0px;
+    }
+    
+    .wrapper-padding-a {
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    .ttt {
+        margin-left: 10%;
+        margin-top: 5px;
+    }
+    
+    .card h6 {
+        margin-left: 10%;
+        margin-top: 5px;
+    }
+    
+    button:hover {
+        transform: scale(1.1);
+    }
+    
+    .pagination {
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/333.png" width="90px" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link " href="index.php">หน้าแรก </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="location.html">แนะนำสถานที่ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="hotel.html">แนะนำที่พัก</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       ภาค
+                      </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="north.html">เหนือ</a>
+                        <a class="dropdown-item" href="Bkk.html">กลาง</a>
+                        <a class="dropdown-item" href="esan.html">อีสาน</a>
+                        <a class="dropdown-item" href="South.html">ใต้</a>
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <a class="nav-link btn btn-dark " href="Booking.php">จองที่พัก</a>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="ค้นหาสถานที่หรืออื่นๆ" aria-label="ค้นหาสถานที่หรืออื่นๆ">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">ค้นหา</button>
+            </form>
+        </div>
+    </nav>
+
+
+
+    <div class="immm">
+        <img src="https://www.tripgether.com/photos/shares/2018_All_Content/Feb_2018/Review_Kept_Bangsare_2017/Keptbangsare_48.jpg" class="img-fluid" alt="Responsive image">
+    </div><br>
+    <hr>
+    <div class="wrapper-padding-a">
+        <div class="mp-popular popular-destinations">
+            <header class="fly-in page-lbl text-danger">
+                <center>
+                    <h3><b>โรงแรมและที่พัก</b></h3>
+                    <h5>แนะนำที่พักน่าสนใจ ในจังหวัดต่างๆ ที่พักคุณภาพบริการประทับใจ ที่พักราคาถูก ที่พักดีๆ ต้องบอกต่อ</h5>
+                    <img src="img/pin.png"></center>
+            </header>
+
+            <div class="fly-in mp-popular-row">
+                <center>
+                    <a href="" target="_blank"><span class="paypal-btn-2">
+                    <a href=""><span class="paypal-btn-2"> #ที่พักกาญจนบุรี </span></a>
+                    <a href="" target="_blank"><span class="paypal-btn-2">#ที่พักเขาใหญ่ </span></a>
+                    <a href="" target="_blank"><span class="paypal-btn-2">#ที่พักเชียงคาน </span></a>
+                    <a href="" target="_blank"><span class="paypal-btn-2">#ที่พักน่าน </span></a>
+                    <a href="" target="_blank"><span class="paypal-btn-2">#ที่พักเกาะล้าน </span></a>
+
+                </center>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="page-search full-width-search search-type-b">
+            <div class="search-type-padding">
+                <nav class="page-search-tabs">
+                    <div class="search-tab active">โรงแรม</div>
+                    <div class="clear"></div>
+                </nav>
+
+
+
+                <form id="frmSearch" name="frmSearch" method="get" action="index.php?page=hotel_detail_style" onsubmit="return check();">
+
+                    <div class="page-search-content">
+
+                        <div class="search-tab-content">
+                            <div class="page-search-p">
+
+
+                                <div class="search-large-i">
+
+                                    <div class="srch-tab-line no-margin-bottom">
+                                        <label>พิมพ์ชื่อสถานที่ / ชื่อโรงแรม</label>
+                                        <div class="input-a">
+                                            <input type="hidden" name="page" value="hotel_detail_style">
+                                            <input type="text" name="keyword" value="" placeholder="ตัวอย่าง : เขาใหญ่">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="search-large-e">
+
+                                <div class="srch-tab-line no-margin-bottom">
+                                    <div class="srch-tab-left">
+                                        <label>สถานที่</label>
+                                        <div class="select-wrapper">
+                                            <select name="provin" id="provin" class="custom-select hasCustomSelect" style="-webkit-appearance: menulist-button; position: absolute; opacity: 0; height: 36px; font-size: 11px; width: 165px;">
+                                      <option>--</option>
+                                      <option value="คำชะโนด">คำชะโนด</option><option value="ชะอำ">ชะอำ</option><option value="บางแสน">บางแสน</option><option value="ปัว">ปัว</option><option value="พัทยา">พัทยา</option><option value="ภูทับเบิก">ภูทับเบิก</option><option value="วังน้ำเขียว">วังน้ำเขียว</option><option value="สวนผึ้ง">สวนผึ้ง</option><option value="สังขละ">สังขละ</option><option value="สัตหีบ">สัตหีบ</option><option value="หัวหิน">หัวหิน</option><option value="อัมพวา">อัมพวา</option><option value="เกาะกูด">เกาะกูด</option><option value="เกาะช้าง">เกาะช้าง</option><option value="เกาะพยาม">เกาะพยาม</option><option value="เกาะพะงัน">เกาะพะงัน</option><option value="เกาะลันตา">เกาะลันตา</option><option value="เกาะล้าน">เกาะล้าน</option><option value="เกาะสมุย">เกาะสมุย</option><option value="เกาะสีชัง">เกาะสีชัง</option><option value="เกาะหมาก">เกาะหมาก</option><option value="เกาะหลีเป๊ะ">เกาะหลีเป๊ะ</option><option value="เกาะเต่า">เกาะเต่า</option><option value="เกาะเสม็ด">เกาะเสม็ด</option><option value="เขาค้อ">เขาค้อ</option><option value="เขาหลัก">เขาหลัก</option><option value="เขาใหญ่">เขาใหญ่</option><option value="เชียงคาน">เชียงคาน</option><option value="แก่งกระจาน">แก่งกระจาน</option><option value="กระบี่">กระบี่</option><option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option><option value="กาญจนบุรี">กาญจนบุรี</option><option value="กาฬสินธุ์">กาฬสินธุ์</option><option value="กำแพงเพชร">กำแพงเพชร</option><option value="ขอนแก่น">ขอนแก่น</option><option value="จันทบุรี">จันทบุรี</option><option value="ฉะเชิงเทรา">ฉะเชิงเทรา</option><option value="ชลบุรี">ชลบุรี</option><option value="ชัยนาท">ชัยนาท</option><option value="ชัยภูมิ">ชัยภูมิ</option><option value="ชุมพร">ชุมพร</option><option value="ตรัง">ตรัง</option><option value="ตราด">ตราด</option><option value="ตาก">ตาก</option><option value="นครนายก">นครนายก</option><option value="นครปฐม">นครปฐม</option><option value="นครพนม">นครพนม</option><option value="นครราชสีมา">นครราชสีมา</option><option value="นครศรีธรรมราช">นครศรีธรรมราช</option><option value="นครสวรรค์">นครสวรรค์</option><option value="นนทบุรี">นนทบุรี</option><option value="นราธิวาส">นราธิวาส</option><option value="น่าน">น่าน</option><option value="บึงกาฬ">บึงกาฬ</option><option value="บุรีรัมย์">บุรีรัมย์</option><option value="ปทุมธานี">ปทุมธานี</option><option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์</option><option value="ปราจีนบุรี">ปราจีนบุรี</option><option value="ปัตตานี">ปัตตานี</option><option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา</option><option value="พะเยา">พะเยา</option><option value="พังงา">พังงา</option><option value="พัทลุง">พัทลุง</option><option value="พิจิตร">พิจิตร</option><option value="พิษณุโลก">พิษณุโลก</option><option value="ภูเก็ต">ภูเก็ต</option><option value="มหาสารคาม">มหาสารคาม</option><option value="มุกดาหาร">มุกดาหาร</option><option value="ยะลา">ยะลา</option><option value="ยโสธร">ยโสธร</option><option value="ร้อยเอ็ด">ร้อยเอ็ด</option><option value="ระนอง">ระนอง</option><option value="ระยอง">ระยอง</option><option value="ราชบุรี">ราชบุรี</option><option value="ลพบุรี">ลพบุรี</option><option value="ลำปาง">ลำปาง</option><option value="ลำพูน">ลำพูน</option><option value="ศรีสะเกษ">ศรีสะเกษ</option><option value="สกลนคร">สกลนคร</option><option value="สงขลา">สงขลา</option><option value="สตูล">สตูล</option><option value="สมุทรปราการ">สมุทรปราการ</option><option value="สมุทรสงคราม">สมุทรสงคราม</option><option value="สมุทรสาคร">สมุทรสาคร</option><option value="สระบุรี">สระบุรี</option><option value="สระแก้ว">สระแก้ว</option><option value="สิงห์บุรี">สิงห์บุรี</option><option value="สุพรรณบุรี">สุพรรณบุรี</option><option value="สุราษฎร์ธานี">สุราษฎร์ธานี</option><option value="สุรินทร์">สุรินทร์</option><option value="สุโขทัย">สุโขทัย</option><option value="หนองคาย">หนองคาย</option><option value="หนองบัวลำภู">หนองบัวลำภู</option><option value="อ่างทอง">อ่างทอง</option><option value="อำนาจเจริญ">อำนาจเจริญ</option><option value="อุดรธานี">อุดรธานี</option><option value="อุตรดิตถ์">อุตรดิตถ์</option><option value="อุทัยธานี">อุทัยธานี</option><option value="อุบลราชธานี">อุบลราชธานี</option><option value="เชียงราย">เชียงราย</option><option value="เชียงใหม่">เชียงใหม่</option><option value="เพชรบุรี">เพชรบุรี</option><option value="เพชรบูรณ์">เพชรบูรณ์</option><option value="เลย">เลย</option><option value="แพร่">แพร่</option><option value="แม่ฮ่องสอน">แม่ฮ่องสอน</option>									</select>
+                                            <span class="customSelect custom-select hasCustomSelect" style="-webkit-appearance: menulist-button; width: 162px; position: absolute; opacity: 0; height: 34px; font-size: 11px; display: inline-block;"><span class="customSelectInner" style="width: 160px; display: inline-block;">--</span></span>
+                                            <span class="customSelect custom-select hasCustomSelect" style="display: inline-block; -webkit-appearance: menulist-button; width: 162px; position: absolute; opacity: 0; height: 34px; font-size: 11px;"><span class="customSelectInner" style="width: 160px; display: inline-block;">--</span></span>
+                                            <span class="customSelect custom-select" style="display: inline-block;"><span class="customSelectInner" style="width: 160px; display: inline-block;">&nbsp;</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="srch-tab-right">
+                                        <button class="srch-btn">ค้นหา</button>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+            </div>
+
+
+            </form>
+            <p>
+
+        </div>
+    </div>
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="https://pix6.agoda.net/hotelImages/399677/-1/062539107bfd62b6098c594f98d903ba.jpg?s=1024x768" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                            role="img" aria-label="Placeholder: Thumbnail">
+
+                        <h6><b>ลำพวา อัมพวา (Lumphawa Amphawa Resort)</b></h6>
+                        <div class="ttt text-danger">
+                            <p>
+                                <h6><b>ราคา 900บาท/คืน</b></h6>
+                            </p>
+                            <ul>
+                                <li>
+                                    Wi-Fi ทุกห้อง (ฟรี)
+                                </li>
+                                <li>
+
+                                    อาหารเช้า (ฟรี)
+                                </li>
+                                <li>
+                                    ระเบียง/ชานเรือน
+                                </li>
+                                <li>
+                                    บริการทำความสะอาดรายวัน
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-text"></h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal">ดูรายละเอียด</button>
+                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+
+                                                    <h4 class="modal-title" id="myModalLabel">ลำพวา อัมพวา (Lumphawa Amphawa Resort)</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ลำพวา อัมพวา รีสอร์ตสวยริมคลอง ที่ค่อนข้างใหญ่และเป็นส่วนตัวมาก แห่งหนึ่งในอัมพวา มีห้องพักแบบส่วนตัวทั้งห้องแบบdeluxe และแบบvilla ห้องส่วนใหญ่มีวิวคลองเล็กที่ออกแลบให้ผ่านห้องส่วนใหญ่ในรีสปอร์ตให้ความรู้สึกผ่อนคลาย มีสระว่ายน้ำที่ไม่ใหญ่มากแต่บรรยากาศดีทั้งทีสระสำหรับเด็กเล็กๆด้วย
+                                                    ห้องพักส่วนใหญ่ขนาดกว้างถึงมาเป็นครอบครัวก็เสริมเตียงได้สบายแบบไม่อึดอัด บรรยากาศโดยรอบเราชอบมาก มีมุมพักผ่อนริมคลองที่มีไข่ชิงช้าให้นั่งชิลล์ อ่านหนังสือ มีพื้นที่ให้เด็กๆเดินเล่นชมนกชมไม้พอสมควรและยังติดคลองขนาดใหญ่ให้ชมน้ำไหลผ่อนคลาย
+                                                    อาหารเช้ามีหลากหลายมากระดับโรงแรม4ดาวเลยและรสชาติอร่อย อยู่ไม่ไกลจากตลาดน้ำอัมพวาและตลาดน้ำท่าคา ถ้าไปอัมพวาอีกต้องกลับไปอย่างแน่นอน อ่านต่อได้ที่
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="https://www.ที่พักแนะนํา.com/upload/c1496057281.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" tle></title>
+                        <h6><b>Idyllic Concept Resort(ไอดีลลิค คอนเซปต์ รีสอร์ท)</b></h6>
+                        <div class="ttt text-danger">
+
+
+                            <p>
+                                <h6><b>ราคา 5260บาท/คืน</b></h6>
+                            </p>
+                            <ul>
+                                <li>
+                                    บริการรถรับส่ง
+                                </li>
+                                <li>
+                                    บริการรถรับส่ง
+                                </li>
+                                <li>
+
+                                    อาหารเช้า (ฟรี)
+                                </li>
+                                <li>
+                                    เครื่องปรับอากาศ
+                                </li>
+                                <li>
+                                    บริการทำความสะอาดรายวัน
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal">ดูรายละเอียด</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title" id="myModalLabel">Idyllic Concept Resort(ไอดีลลิค คอนเซปต์ รีสอร์ท)</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="https://www.ที่พักแนะนํา.com/pchotel/h1551767134.webp" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+
+                        <h6><b>Duangjitt Resort and Spa
+
+                            ดวงจิต รีสอร์ต แอนด์ สปา</b></h6>
+                        <div class="ttt text-danger">
+
+                            <p>
+                                <h6><b>ราคา 3500บาท/คืน</b></h6>
+                            </p>
+                            <ul>
+                                <li>
+                                    ห้องพักรวมอาหารเช้า
+                                </li>
+                                <li>
+
+                                    อินเตอร์เนต
+                                </li>
+                                <li>
+                                    ที่จอดรถ
+                                </li>
+                                <li>
+                                    บริการทำความสะอาดรายวัน
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-primary">ดูรายละเอียด</button>
+
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="album py-5 bg-light">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img src="https://www.ที่พักแนะนํา.com/upload/c1519280979.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+
+                                <h6><b>ลำพวา อัมพวา (Lumphawa Amphawa Resort)</b></h6>
+                                <div class="ttt text-danger">
+                                    <p>
+                                        <h6><b>ราคา 1350บาท/คืน</b></h6>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            ห้องออกกำลังกาย/ฟิตเนส
+                                        </li>
+                                        <li>
+
+                                            อาหารเช้า (ฟรี)
+                                        </li>
+                                        <li>
+                                            ที่จอดรถ
+                                        </li>
+                                        <li>
+                                            สปา/ซาวน่า
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-text"></h6>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-primary">ดูรายละเอียด</button>
+
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img src="https://www.ที่พักแนะนํา.com/upload/c1550031679.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" tle></title>
+                                <h6><b>Peggy s cove resort
+
+                                    เป๊กกี้ โคฟ รีสอร์ท</b></h6>
+                                <div class="ttt text-danger">
+
+
+                                    <p>
+                                        <h6><b>ราคา 3000บาท/คืน</b></h6>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            บริการนวด
+                                        </li>
+                                        <li>
+                                            บริการรถรับส่ง
+                                        </li>
+                                        <li>
+
+                                            อินเทอร์เน็ตไร้สาย (WIFI)
+                                        </li>
+                                        <li>
+                                            เครื่องปรับอากาศ
+                                        </li>
+                                        <li>
+                                            สปา/ซาวน่า
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-primary">ดูรายละเอียด</button>
+
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img src="https://www.ที่พักแนะนํา.com/upload/c1517901947.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+
+                                <h6><b>บีทู แม่ฮ่องสอน พรีเมียร์ โฮเต็ล</b></h6>
+                                <div class="ttt text-danger">
+
+                                    <p>
+                                        <h6><b>ราคา 1400บาท/คืน</b></h6>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            ห้องพักรวมอาหารเช้า
+                                        </li>
+                                        <li>
+
+                                            อินเตอร์เนต(Wi-fi)
+                                        </li>
+                                        <li>
+                                            ที่จอดรถ
+                                        </li>
+                                        <li>
+                                            บริการทำความสะอาดรายวัน
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-primary">ดูรายละเอียด</button>
+
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="album py-5 bg-light">
+                        <div class="container">
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card mb-4 shadow-sm">
+                                        <img src="https://ที่พักแนะนํา.com/upload/c1494864765.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+
+                                        <h6><b>The Pino Hotel Pakchong
+
+                                            เดอะ พีโน่ โฮเทล ปากช่อง</b></h6>
+                                        <div class="ttt text-danger">
+                                            <p>
+                                                <h6><b>ราคา 1800บาท/คืน</b></h6>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Wi-Fi ทุกห้อง (ฟรี)
+                                                </li>
+                                                <li>
+
+                                                    อาหารเช้า (ฟรี)
+                                                </li>
+                                                <li>
+                                                    เครื่องปรับอากาศ
+                                                </li>
+                                                <li>
+                                                    บริการทำความสะอาดรายวัน
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-text"></h6>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm btn-primary">ดูรายละเอียด</button>
+
+                                                </div>
+                                                <small class="text-muted">9 mins</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4 shadow-sm">
+                                        <img src="https://ที่พักแนะนํา.com/upload/c1528122135.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" tle></title>
+                                        <h6><b>Khao Yai 01
+
+                                            เขาใหญ่ 01</b></h6>
+                                        <div class="ttt text-danger">
+
+
+                                            <p>
+                                                <h6><b>ราคา 2000บาท/คืน</b></h6>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    อุปกรณ์ปิ้งย่าง
+                                                </li>
+                                                <li>
+                                                    สระว่ายน้ำในร่ม
+                                                </li>
+                                                <li>
+
+                                                    อาหารเช้า (ฟรี)
+                                                </li>
+                                                <li>
+                                                    เครื่องปรับอากาศ
+                                                </li>
+                                                <li>
+                                                    บริการทำความสะอาดรายวัน
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text"></p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm btn-primary">ดูรายละเอียด</button>
+
+                                                </div>
+                                                <small class="text-muted">9 mins</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4 shadow-sm">
+                                        <img src="https://ที่พักแนะนํา.com/upload/c1494860576.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+
+                                        <h6><b>เขาใหญ่ พาราไดซ์ ออน เอิร์ท</b></h6>
+                                        <div class="ttt text-danger">
+
+                                            <p>
+                                                <h6><b>ราคา 3700บาท/คืน</b></h6>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    ห้องพักรวมอาหารเช้า
+                                                </li>
+                                                <li>
+
+                                                    อินเตอร์เนต
+                                                </li>
+                                                <li>
+                                                    ที่จอดรถ
+                                                </li>
+                                                <li>
+                                                    บริการทำความสะอาดรายวัน
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text"></p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm btn-primary">ดูรายละเอียด</button>
+
+                                                </div>
+                                                <small class="text-muted">9 mins</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <nav aria-label="Next">
+
+                                    <ul class="pagination">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1">กลับไป</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="index.php">1</a></li>
+                                        <li class="page-item active">
+                                            <a class="page-link" href="location">2 <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="location.html">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="hotel.html">ถัดไป</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+                            <p>
+                                <p> ข้อมูลจาก : แนะนำที่พัก.com </p>
+                                <p> ข้อมูลจาก : tripgether.com </p>
+                                <div class="alert alert-info" role="alert">
+                                    ข้อมูลจังหวัดท่องเที่ยว
+                                </div>
+                                <div class="row" style="font-size:12px; padding:20px;">
+                                    <div class="item clearfix">
+                                        <div class="desc">
+                                            <strong>แอ่วเหนือ : </strong>
+                                            <a href="" target="_blank"> เชียงราย</a>
+                                            <a href="" target="_blank">, เชียงใหม่</a>
+                                            <a href="" target="_blank">, น่าน</a>
+                                            <a href="" target="_blank">, ปาย</a>
+                                            <a href="" target="_blank">, พะเยา</a>
+                                            <a href="" target="_blank">, แพร่</a>
+                                            <a href="" target="_blank">, แม่ฮ่องสอน</a>
+                                            <a href="" target="_blank">, ลำปาง</a>
+                                            <a href="" target="_blank">, ลำพูน</a>
+                                            <a href="" target="_blank">, อุตรดิตถ์</a>
+                                        </div>
+                                        <!-- desc -->
+                                    </div>
+                                    <!-- item -->
+                                    <div class="item clearfix">
+                                        <div class="desc">
+                                            <strong>ท่องภาคกลาง : </strong>
+                                            <a href="" target="_blank"> กรุงเทพมหานคร</a>
+                                            <a href="" target="_blank">, กาญจนบุรี</a>
+                                            <a href="" target="_blank">, กำแพงเพชร</a>
+                                            <a href="" target="_blank">, เขาค้อ</a>
+                                            <a href="" target="_blank">, ชะอำ</a>
+                                            <a href="" target="_blank">, ชัยนาท</a>
+                                            <a href="" target="_blank">, ตาก</a>
+                                            <a href="" target="_blank">, นครนายก</a>
+                                            <a href="" target="_blank">, นครปฐม</a>
+                                            <a href="" target="_blank">, นครสวรรค์</a>
+                                            <a href="" target="_blank">, นนทบุรี</a>
+                                            <a href="" target="_blank">, ปทุมธานี</a>
+                                            <a href="" target="_blank">, ประจวบคีรีขันธ์</a>
+                                            <a href="" target="_blank">, ปราณบุรี</a>
+                                            <a href="" target="_blank">, พระนครศรีอยุธยา</a>
+                                            <a href="" target="_blank">, พิจิตร</a>
+                                            <a href="" target="_blank">, พิษณุโลก</a>
+                                            <a href="" target="_blank">, เพชรบุรี</a>
+                                            <a href="" target="_blank">, เพชรบูรณ์</a>
+                                            <a href="" target="_blank">, ราชบุรี</a>
+                                            <a href="" target="_blank">, ลพบุรี</a>
+                                            <a href="" target="_blank">, สมุทรปราการ</a>
+                                            <a href="" target="_blank">, สมุทรสงคราม</a>
+                                            <a href="" target="_blank">, สมุทรสาคร</a>
+                                            <a href="" target="_blank">, สระบุรี</a>
+                                            <a href="" target="_blank">, สวนผึ้ง</a>
+                                            <a href="" target="_blank">, สังขละบุรี</a>
+                                            <a href="" target="_blank">, สิงห์บุรี</a>
+                                            <a href="" target="_blank">, สุโขทัย</a>
+                                            <a href="" target="_blank">, สุพรรณบุรี</a>
+                                            <a href="" target="_blank">, หัวหิน</a>
+                                            <a href="" target="_blank">, อัมพวา</a>
+                                            <a href="" target="_blank">, อ่างทอง</a>
+                                            <a href="" target="_blank">, อุทัยธานี</a>
+                                        </div>
+                                        <!-- desc -->
+                                    </div>
+                                    <!-- item -->
+                                    <div class="item clearfix">
+                                        <div class="desc">
+                                            <strong>เยือนถิ่นอีสาน : </strong>
+                                            <a href="" target="_blank"> กาฬสินธุ์</a>
+                                            <a href="" target="_blank">, ขอนแก่น</a>
+                                            <a href="" target="_blank">, เขาใหญ่</a>
+                                            <a href="" target="_blank">, ชัยภูมิ</a>
+                                            <a href="" target="_blank">, เชียงคาน</a>
+                                            <a href="" target="_blank">, นครพนม</a>
+                                            <a href="" target="_blank">, นครราชสีมา</a>
+                                            <a href="" target="_blank">, บึงกาฬ</a>
+                                            <a href="" target="_blank">, บุรีรัมย์</a>
+                                            <a href="" target="_blank">, มหาสารคาม</a>
+                                            <a href="" target="_blank">, มุกดาหาร</a>
+                                            <a href="" target="_blank">, ยโสธร</a>
+                                            <a href="" target="_blank">, ร้อยเอ็ด</a>
+                                            <a href="" target="_blank">, เลย</a>
+                                            <a href="" target="_blank">, วังน้ำเขียว</a>
+                                            <a href="" target="_blank">, ศรีสะเกษ</a>
+                                            <a href="" target="_blank">, สกลนคร</a>
+                                            <a href="" target="_blank">, สุรินทร์</a>
+                                            <a href="" target="_blank">, หนองคาย</a>
+                                            <a href="" target="_blank">, หนองบัวลำภู</a>
+                                            <a href="" target="_blank">, อำนาจเจริญ</a>
+                                            <a href="" target="_blank">, อุดรธานี</a>
+                                            <a href="" target="_blank">, อุบลราชธานี</a>
+                                        </div>
+                                        <!-- desc -->
+                                    </div>
+                                    <!-- item -->
+                                    <div class="item clearfix">
+                                        <div class="desc">
+                                            <strong>เที่ยวตะวันออก : </strong>
+                                            <a href="" target="_blank"> เกาะกูด</a>
+                                            <a href="" target="_blank">, เกาะช้าง</a>
+                                            <a href="" target="_blank">, เกาะล้าน</a>
+                                            <a href="" target="_blank">, เกาะสีชัง</a>
+                                            <a href="" target="_blank">, เกาะเสม็ด</a>
+                                            <a href="" target="_blank">, เกาะหมาก</a>
+                                            <a href="" target="_blank">, จันทบุรี</a>
+                                            <a href="" target="_blank">, ฉะเชิงเทรา</a>
+                                            <a href="" target="_blank">, ชลบุรี</a>
+                                            <a href="" target="_blank">, ตราด</a>
+                                            <a href="" target="_blank">, ปราจีนบุรี</a>
+                                            <a href="" target="_blank">, พัทยา</a>
+                                            <a href="" target="_blank">, ระยอง</a>
+                                            <a href="" target="_blank">, สระแก้ว</a>
+                                            <a href="" target="_blank">, สัตหีบ</a>
+                                        </div>
+                                        <!-- desc -->
+                                    </div>
+                                    <!-- item -->
+                                    <div class="item clearfix">
+                                        <div class="desc">
+                                            <strong>ล่องใต้ : </strong>
+                                            <a href="" target="_blank"> กระบี่</a>
+                                            <a href="" target="_blank">, เกาะพะงัน</a>
+                                            <a href="" target="_blank">, เกาะสมุย</a>
+                                            <a href="" target="_blank">, ชุมพร</a>
+                                            <a href="" target="_blank">, ตรัง</a>
+                                            <a href="" target="_blank">, นครศรีธรรมราช</a>
+                                            <a href="" target="_blank">, นราธิวาส</a>
+                                            <a href="" target="_blank">, ปัตตานี</a>
+                                            <a href="" target="_blank">, พังงา</a>
+                                            <a href="" target="_blank">, พัทลุง</a>
+                                            <a href="" target="_blank">, ภูเก็ต</a>
+                                            <a href="" target="_blank">, ยะลา</a>
+                                            <a href="" target="_blank">, ระนอง</a>
+                                            <a href="" target="_blank">, สงขลา</a>
+                                            <a href="" target="_blank">, สตูล</a>
+                                            <a href="" target="_blank">, สุราษฎร์ธานี</a>
+                                            <a href="" target="_blank">, หาดใหญ่</a>
+                                        </div>
+                                        <!-- desc -->
+                                    </div>
+                                    <!-- item -->
+                                </div>
+                                <!-- .row -->
+                        </div>
+                    </div>
+                    <!-- .group -->
+                </div>
+                <hr>
+
+
+                <!-- Footer -->
+                <footer class="page-footer font-small blue lighten-5">
+
+                    <div style="background-color: #21d192;">
+                        <div class="container">
+
+                            <!-- Grid row-->
+                            <div class="row py-4 d-flex align-items-center">
+
+                                <!-- Grid column -->
+                                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                                    <h5 class="mb-0"><b>บริการของเรา (Services & Solutions)</b></h5>
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                                    <!-- Facebook -->
+                                    <a href="#" target="_blank"><img height="20" src="img/facebook.png"></a>
+                                    <!-- Twitter -->
+                                    <a href="#" target="_blank"><img height="20" src="img/twitter.png"></a>
+
+                                    <!--Linkedin -->
+                                    <a href="#" target="_blank"><img height="20" src="img/instagram.png"></a>
+                                    <!--Instagram-->
+                                    <a href="#" target="_blank"><img height="20" src="img/youtube.png"></a>
+
+                                    <a href="#" target="_blank"><img height="20" src="img/google.png"></a>
+                                </div>
+                                <!-- Grid column -->
+
+                            </div>
+                            <!-- Grid row-->
+
+                        </div>
+                    </div>
+
+                    <!-- Footer Links -->
+                    <div class="container text-center text-md-left mt-5">
+
+                        <!-- Grid row -->
+                        <div class="row mt-3 dark-grey-text">
+
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+                                <!-- Content -->
+                                <h6 class="text-uppercase font-weight-bold">ที่อยู่</h6>
+                                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                                <p>ม.สิริเพลส นวนคร ต.เชียงรากน้อง อ.บางปะอิน จ.พระนครศรีอยุธยา 13180</p>
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                                <!-- Links -->
+                                <h6 class="text-uppercase font-weight-bold">เกี่ยวกับเรา</h6>
+                                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                                <p>
+                                    <i class="-" href=""></i>เกี่ยวกับเรา</p>
+                                <p>
+                                    <i class="-" href=""></i>เงื่อนไขการใช้บริการ</p>
+                                <p>
+                                    <i class="-" href=""></i>นโยบายความเป็นส่วนตัว</p>
+
+
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                                <!-- Links -->
+                                <h6 class="text-uppercase font-weight-bold">ช่องทางการติดต่อ</h6>
+                                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                                <p>
+                                    <i class="fa fa-home mr-3"></i> THAI LAND, TH 10012</p>
+                                <p>
+                                    <i class="fa fa-envelope mr-3"></i>gogotravel@gmail.com</p>
+                                <p>
+                                    <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                                <p>
+                                    <i class="fa fa-print mr-3"></i> + 02 234 567 89</p>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </footer><br>
+
+
+
+
+
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

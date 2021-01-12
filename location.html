@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="style1.csss" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>gogotravel</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+    body {
+        font-family: 'Kanit', sans-serif;
+        margin-left: 120px;
+        margin-right: 120px;
+        padding: 0%;
+    }
+    
+    .immm {
+        margin-top: 15px;
+        margin-left: 250px;
+        margin-right: 200px;
+    }
+    
+    .font-small {
+        background-color: #e1f5fe;
+    }
+    
+    button:hover {
+        transform: scale(1.1);
+    }
+    
+    li:hover {
+        transform: scale(1.2);
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/333.png" width="90px" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link " href="index.php">หน้าแรก </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="location.html">แนะนำสถานที่ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="hotel.html">แนะนำที่พัก</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       ภาค
+                      </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="north.html">เหนือ</a>
+                        <a class="dropdown-item" href="Bkk.html">กลาง</a>
+                        <a class="dropdown-item" href="esan.html">อีสาน</a>
+                        <a class="dropdown-item" href="South.html">ใต้</a>
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <a class="nav-link btn btn-dark " href="login.php">จองที่พัก</a>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="ค้นหาสถานที่หรืออื่นๆ" aria-label="ค้นหาสถานที่หรืออื่นๆ">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">ค้นหา</button>
+            </form>
+
+        </div>
+    </nav>
+
+    <div class="immm">
+        <img src="https://cms.dmpcdn.com/travel/2017/08/03/dbdabd7b-cbd8-4f36-b4f1-05fd51055d0c.jpg" class="img-fluid" alt="Responsive image">
+    </div><br>
+    <hr>
+    <ul class="nav justify-content-center ">
+        <li class="nav-item ">
+            <a class="nav-link active text-danger" href="Sea.html">ทะเล</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-danger" href="#">ภูเขา</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-danger" href="#">ทั่เที่ยวกรุงเทพ</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link  text-danger" href="#" tabindex="-1" aria-disabled="true">ร้านอาหาร</a>
+        </li>
+    </ul>
+    <center>
+        <h4>50 ที่เที่ยว สวยที่สุดในไทย ชาตินี้ต้องไป ให้ได้สักครั้ง !</h4>
+    </center>
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col mb-4">
+            <div class="card">
+                <img src="https://cms.dmpcdn.com/travel/2017/08/03/b831d834-c87d-46d8-9b45-672dca0e8df2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ตรัง</h5>
+                    <p class="card-text">เกาะมุก ได้ชื่อว่า “ถ้ำมรกตอันล้ำค่าแห่งอันดามัน” เป็นเกาะที่ใหญ่เป็นอันดับที่ 3 ของท้องทะเลตรังเลยทีเดียว นอกจากชาดหาดที่สวยงามแล้ว เกาะมุกยังมีจุดเด่นที่ ถ้ำมรกต ถ้ำน้ำเล็กๆ...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <img src="https://cms.dmpcdn.com/travel/2017/08/03/c56b9abd-03ce-4c5e-862f-109035202301.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">เชียงคาน</h5>
+                    <p class="card-text">เชียงคาน เมืองที่ยังคงความสวยงามด้วยสถาปัตยกรรมโบราณดั้งเดิม เป็นที่ดึงดูดใจของนักท่องเที่ยวมาทุกยุคทุกสมัย ไม่น่าเชื่อว่าตรอกเล็กๆ ริมน้ำโขงแห่งนี้จะมีนักท่องเที่ยวทุกมุมโลกมาเยี่ยมเยียนอย่างไม่ขาดสาย...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <img src="https://cms.dmpcdn.com/travel/2017/08/03/44aa9e30-1540-47c8-abd8-e86029b256da.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ตึกชิโนโปตุกีส เมืองเก่าภูเก็ต</h5>
+                    <p class="card-text"> ใครว่า ภูเก็ต ทะเลสวยอย่างเดียว ขอเถียงคอเป็นเอ็นเลยค่ะว่าไม่จริ๊ง ไม่จริง เพราะนอกจากทะเลสวย น้ำใส หมู่เกาะต่างๆ แล้ว ในตัวเมืองภูเก็ตเขาก็มีของดีที่หาชมที่ไหนได้ยากอยู่ด้วยเหมือนกัน...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <img src="https://cms.dmpcdn.com/travel/2017/08/03/2db619dd-b1f6-49ac-9c0a-c56ae8a1746a.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">เกาะตาชัย</h5>
+                    <p class="card-text"> เกาะตาชัย ขึ้นชื่อเรื่องหาดทรายขาวราวคอฟฟี่เมต เป็นที่เที่ยวนิยมมากๆ ในไม่กี่ปีมานี้ค่ะ เกาะตาชัยเป็นส่วนหนึ่งของอุทยานแห่งชาติหมู่เกาะสิมิลัน...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col mb-4">
+            <div class="card">
+                <img src="https://cms.dmpcdn.com/travel/2017/08/03/a65826bf-aca5-4be5-8873-f39a1e78ee18.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">น้ำพุร้อนฝาง</h5>
+                    <p class="card-text">น้ำพุร้อนฝาง ตั้งอยู่ในอุทยานแห่งชาติดอยผ้าห่มปก ซึ่งมีความอุดมสมบูรณ์ทางธรรมชาติมาก บ่อน้ำพุร้อนมีมากกว่า 50 บ่อ กระจายไปทั่วพื้นที่ และมีขนาดใหญ่เล็กแตกต่างกันไป</p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <img src="https://cms.dmpcdn.com/travel/2017/08/03/bdff5372-bc3f-407c-b010-c627b0c95208.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">วัดเฉลิมพระเกียรติพระจอมเกล้าราชานุสรณ์</h5>
+                    <p class="card-text">.</p> อีกหนึ่ง Unseen Thailand ที่ไม่ควรพลาด วัดเฉลิมพระเกียรติพระจอมเกล้าราชานุสรณ์ หรือ วัดพระบาทปู่ผาแดง ในอำเภอแจ้ห่ม จังหวัดลำปาง วัดแห่งนี้ตั้งอยู่บนยอดเขา
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <img src="https://cms.dmpcdn.com/travel/2017/08/03/777c82fa-272f-43e7-806a-8d53a582e232.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">เพลาเพลิน</h5>
+                    <p class="card-text"> หลายคนอาจจะไม่เชื่อเพราะติดภาพความแห้งแล้งของอีสานเข้าไป ก็ไว้จนคิดว่าอีสานต้องร้อนและแล้งสุดๆ แต่ขอบอกว่า เดี๋ยวนี้เขาพัฒนาแล้ว ! </p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <img src="https://cms.dmpcdn.com/travel/2017/08/03/2699f5f3-eefc-4b76-8dd3-8133b4873d15.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">หมู่เกาะกำ</h5>
+                    <p class="card-text">หมู่เกาะกำ นั้น เป็นหมู่เกาะที่อยู่ในพื้นที่ของอุทยานแห่งชาติแหลมสน ที่นี่เป็นหมู่เกาะที่มีความสวยงาม น้ำทะเลใส และหาดทรายขาว เป็นจุดดำน้ำตื้น, เล่นน้ำ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col mb-4">
+            <div class="card">
+                <img src="https://cms.dmpcdn.com/travel/2017/08/03/73512677-71cf-4649-9b4d-ca4b47d2587e.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ซากุระ อ่างขาง</h5>
+                    <p class="card-text"> ต้องบอกว่าหนึ่งปีมีแค่ครั้งเดียวเท่านั้นกับการอวดโฉมของซากุระญี่ปุ่น ที่ไม่ต้องบินไปไกลก็สามารถเที่ยวชมกันได้ที่ สถานีเกษตรหลวงอ่างขาง ต้นซากุระญี่ปุ่น และ เชอรี่</p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <img src="https://cms.dmpcdn.com/travel/2017/08/03/e1f47499-15d5-4946-8fde-878d500bb1f5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">เกาะไม้ท่อน</h5>
+                    <p class="card-text"> Honeymoon Island หรือ เกาะไม้ท่อน เกาะส่วนตัวที่มองจากด้านบนอากาศลงมาแล้วจะเห็นเป็นรูปท่อนไม้ จึงเป็นที่มาของเกาะไม้ท่อนนั่นเอง </p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <img src="https://cms.dmpcdn.com/travel/2017/08/03/6a1ca211-0b46-4dd0-9350-7cdcf833a975.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">พระธาตุศรีสองรัก</h5>
+                    <p class="card-text">พระธาตุศรีสองรัก นั้นถือเป็นสัญลักษณ์ และตราประจำจังหวัดเลย อยู่ในวัดพระธาตุศรีสองรักซึ่งเป็นวัดที่ไม่มีพระภิกษุพำนักอยู่ </p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <img src="https://cms.dmpcdn.com/travel/2017/08/03/1b3472eb-6d0a-4e03-b53e-7882639f6aed.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ไร่สตรอเบอร์รี่</h5>
+                    <p class="card-text"> หน้าหนาวในไทย นอกจากการไปนอนกางเต้นท์ ดูทะเลหมอก หรือ ดูดอกไม้เมืองหนาวบานสะพรั่ง อีกสิ่งหนึ่งที่พลาดไม่ได้เลยก็คือการไปชิมสตรอว์เบอร์รี่สดๆ จากไร่ และที่ ‘เชียงใหม่’</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col mb-4">
+            <div class="card">
+                <img src="https://cms.dmpcdn.com/travel/2017/08/03/2b2837aa-9ee2-4bfd-81b9-1f235cea8508.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">พญาคันคาก</h5>
+                    <p class="card-text">
+                        ลืมเมอร์ไลอ้อนสิงคโปร์ไปได้เลย! เพราะวันนี้เมืองไทยเรามีแลนด์มาร์คแห่งใหม่ พิพิธภัณฑ์พญาคันคาก สุดยิ่งใหญ่ริมแม่น้ำทวนใน จ.ยโสธร</p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <img src="https://cms.dmpcdn.com/travel/2017/08/03/73b05b6c-d3b6-4808-8a69-426b15b56fac.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ภูชี้ฟ้า</h5>
+                    <p class="card-text"> ภูชี้ฟ้า เป็นยอดเขาสูงที่สุดในเทือกเขาดอยผาหม่น ติดชายแดนไทย-ลาว ค่ะ ตั้งอยู่ในอำเภอเทิง จังหวัดเชียงราย ด้วยความมีเอกลักษณ์ทางธรรมชาติของลักษณะหน้าผาปลายยอดแหลม </p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <img src="https://cms.dmpcdn.com/travel/2017/08/03/5ec6258d-0c7d-4367-bb8e-46b3ef8d6dcb.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">วัดพระธาตุเขาน้อย</h5>
+                    <p class="card-text">สำหรับวันนี้เราจะพาไปชมวิวที่สวยที่สุดของจังหวัดน่าน พร้อมนมัสการองค์พระใหญ่คู่บ้านคู่เมืองน่าน ที่ “วัดพระธาตุเขาน้อย” วัดพระธาตุเขาน้อยตั้งอยู่ใน ตำบลไชยสถาน</p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <img src="https://cms.dmpcdn.com/travel/2017/08/03/58218a99-7f85-4cd8-9fa3-6f366fba7dc0.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ภูลมโล</h5>
+                    <p class="card-text">ใครกำลังอยากไปชมซากุระเมืองไทย หรือ ต้นนางพญาเสือโคร่ง ดอกสีชมพู บานสะพรั่งไปทั่วทั้งขุนเขา แล้วล่ะก็ ต้องไปพลาดไปเที่ยวที่นี่ค่ะ “ภูลมโล” อ.ด่านซ้าย จ.เลย ที่นี่เป็นแหล่งท่องเที่ยวเชิงอนุรักษ์ธรรมชาติแห่งใหม่</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    ข้อมูลจาก https://travel.trueid.net
+
+
+
+
+
+    <p>
+        <div class="alert alert-info" role="alert">
+            ข้อมูลจังหวัดท่องเที่ยว
+        </div>
+        <div class="row" style="font-size:12px; padding:20px;">
+            <div class="item clearfix">
+                <div class="desc">
+                    <strong>แอ่วเหนือ : </strong>
+                    <a href="" target="_blank"> เชียงราย</a>
+                    <a href="" target="_blank">, เชียงใหม่</a>
+                    <a href="" target="_blank">, น่าน</a>
+                    <a href="" target="_blank">, ปาย</a>
+                    <a href="" target="_blank">, พะเยา</a>
+                    <a href="" target="_blank">, แพร่</a>
+                    <a href="" target="_blank">, แม่ฮ่องสอน</a>
+                    <a href="" target="_blank">, ลำปาง</a>
+                    <a href="" target="_blank">, ลำพูน</a>
+                    <a href="" target="_blank">, อุตรดิตถ์</a>
+                </div>
+                <!-- desc -->
+            </div>
+            <!-- item -->
+            <div class="item clearfix">
+                <div class="desc">
+                    <strong>ท่องภาคกลาง : </strong>
+                    <a href="" target="_blank"> กรุงเทพมหานคร</a>
+                    <a href="" target="_blank">, กาญจนบุรี</a>
+                    <a href="" target="_blank">, กำแพงเพชร</a>
+                    <a href="" target="_blank">, เขาค้อ</a>
+                    <a href="" target="_blank">, ชะอำ</a>
+                    <a href="" target="_blank">, ชัยนาท</a>
+                    <a href="" target="_blank">, ตาก</a>
+                    <a href="" target="_blank">, นครนายก</a>
+                    <a href="" target="_blank">, นครปฐม</a>
+                    <a href="" target="_blank">, นครสวรรค์</a>
+                    <a href="" target="_blank">, นนทบุรี</a>
+                    <a href="" target="_blank">, ปทุมธานี</a>
+                    <a href="" target="_blank">, ประจวบคีรีขันธ์</a>
+                    <a href="" target="_blank">, ปราณบุรี</a>
+                    <a href="" target="_blank">, พระนครศรีอยุธยา</a>
+                    <a href="" target="_blank">, พิจิตร</a>
+                    <a href="" target="_blank">, พิษณุโลก</a>
+                    <a href="" target="_blank">, เพชรบุรี</a>
+                    <a href="" target="_blank">, เพชรบูรณ์</a>
+                    <a href="" target="_blank">, ราชบุรี</a>
+                    <a href="" target="_blank">, ลพบุรี</a>
+                    <a href="" target="_blank">, สมุทรปราการ</a>
+                    <a href="" target="_blank">, สมุทรสงคราม</a>
+                    <a href="" target="_blank">, สมุทรสาคร</a>
+                    <a href="" target="_blank">, สระบุรี</a>
+                    <a href="" target="_blank">, สวนผึ้ง</a>
+                    <a href="" target="_blank">, สังขละบุรี</a>
+                    <a href="" target="_blank">, สิงห์บุรี</a>
+                    <a href="" target="_blank">, สุโขทัย</a>
+                    <a href="" target="_blank">, สุพรรณบุรี</a>
+                    <a href="" target="_blank">, หัวหิน</a>
+                    <a href="" target="_blank">, อัมพวา</a>
+                    <a href="" target="_blank">, อ่างทอง</a>
+                    <a href="" target="_blank">, อุทัยธานี</a>
+                </div>
+                <!-- desc -->
+            </div>
+            <!-- item -->
+            <div class="item clearfix">
+                <div class="desc">
+                    <strong>เยือนถิ่นอีสาน : </strong>
+                    <a href="" target="_blank"> กาฬสินธุ์</a>
+                    <a href="" target="_blank">, ขอนแก่น</a>
+                    <a href="" target="_blank">, เขาใหญ่</a>
+                    <a href="" target="_blank">, ชัยภูมิ</a>
+                    <a href="" target="_blank">, เชียงคาน</a>
+                    <a href="" target="_blank">, นครพนม</a>
+                    <a href="" target="_blank">, นครราชสีมา</a>
+                    <a href="" target="_blank">, บึงกาฬ</a>
+                    <a href="" target="_blank">, บุรีรัมย์</a>
+                    <a href="" target="_blank">, มหาสารคาม</a>
+                    <a href="" target="_blank">, มุกดาหาร</a>
+                    <a href="" target="_blank">, ยโสธร</a>
+                    <a href="" target="_blank">, ร้อยเอ็ด</a>
+                    <a href="" target="_blank">, เลย</a>
+                    <a href="" target="_blank">, วังน้ำเขียว</a>
+                    <a href="" target="_blank">, ศรีสะเกษ</a>
+                    <a href="" target="_blank">, สกลนคร</a>
+                    <a href="" target="_blank">, สุรินทร์</a>
+                    <a href="" target="_blank">, หนองคาย</a>
+                    <a href="" target="_blank">, หนองบัวลำภู</a>
+                    <a href="" target="_blank">, อำนาจเจริญ</a>
+                    <a href="" target="_blank">, อุดรธานี</a>
+                    <a href="" target="_blank">, อุบลราชธานี</a>
+                </div>
+                <!-- desc -->
+            </div>
+            <!-- item -->
+            <div class="item clearfix">
+                <div class="desc">
+                    <strong>เที่ยวตะวันออก : </strong>
+                    <a href="" target="_blank"> เกาะกูด</a>
+                    <a href="" target="_blank">, เกาะช้าง</a>
+                    <a href="" target="_blank">, เกาะล้าน</a>
+                    <a href="" target="_blank">, เกาะสีชัง</a>
+                    <a href="" target="_blank">, เกาะเสม็ด</a>
+                    <a href="" target="_blank">, เกาะหมาก</a>
+                    <a href="" target="_blank">, จันทบุรี</a>
+                    <a href="" target="_blank">, ฉะเชิงเทรา</a>
+                    <a href="" target="_blank">, ชลบุรี</a>
+                    <a href="" target="_blank">, ตราด</a>
+                    <a href="" target="_blank">, ปราจีนบุรี</a>
+                    <a href="" target="_blank">, พัทยา</a>
+                    <a href="" target="_blank">, ระยอง</a>
+                    <a href="" target="_blank">, สระแก้ว</a>
+                    <a href="" target="_blank">, สัตหีบ</a>
+                </div>
+                <!-- desc -->
+            </div>
+            <!-- item -->
+            <div class="item clearfix">
+                <div class="desc">
+                    <strong>ล่องใต้ : </strong>
+                    <a href="" target="_blank"> กระบี่</a>
+                    <a href="" target="_blank">, เกาะพะงัน</a>
+                    <a href="" target="_blank">, เกาะสมุย</a>
+                    <a href="" target="_blank">, ชุมพร</a>
+                    <a href="" target="_blank">, ตรัง</a>
+                    <a href="" target="_blank">, นครศรีธรรมราช</a>
+                    <a href="" target="_blank">, นราธิวาส</a>
+                    <a href="" target="_blank">, ปัตตานี</a>
+                    <a href="" target="_blank">, พังงา</a>
+                    <a href="" target="_blank">, พัทลุง</a>
+                    <a href="" target="_blank">, ภูเก็ต</a>
+                    <a href="" target="_blank">, ยะลา</a>
+                    <a href="" target="_blank">, ระนอง</a>
+                    <a href="" target="_blank">, สงขลา</a>
+                    <a href="" target="_blank">, สตูล</a>
+                    <a href="" target="_blank">, สุราษฎร์ธานี</a>
+                    <a href="" target="_blank">, หาดใหญ่</a>
+                </div>
+                <!-- desc -->
+            </div>
+            <!-- item -->
+        </div>
+        <!-- .row -->
+        </div>
+        </div>
+        <!-- .group -->
+        </div>
+        <hr>
+
+
+        <!-- Footer -->
+        <footer class="page-footer font-small blue lighten-5">
+
+            <div style="background-color: #21d192;">
+                <div class="container">
+
+                    <!-- Grid row-->
+                    <div class="row py-4 d-flex align-items-center">
+
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                            <h5 class="mb-0"><b>บริการของเรา (Services & Solutions)</b></h5>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                            <!-- Facebook -->
+                            <a href="#" target="_blank"><img height="20" src="img/facebook.png"></a>
+                            <!-- Twitter -->
+                            <a href="#" target="_blank"><img height="20" src="img/twitter.png"></a>
+
+                            <!--Linkedin -->
+                            <a href="#" target="_blank"><img height="20" src="img/instagram.png"></a>
+                            <!--Instagram-->
+                            <a href="#" target="_blank"><img height="20" src="img/youtube.png"></a>
+
+                            <a href="#" target="_blank"><img height="20" src="img/google.png"></a>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row-->
+
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left mt-5">
+
+                <!-- Grid row -->
+                <div class="row mt-3 dark-grey-text">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+                        <!-- Content -->
+                        <h6 class="text-uppercase font-weight-bold">ที่อยู่</h6>
+                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>ม.สิริเพลส นวนคร ต.เชียงรากน้อง อ.บางปะอิน จ.พระนครศรีอยุธยา 13180</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">เกี่ยวกับเรา</h6>
+                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <i class="-" href=""></i>เกี่ยวกับเรา</p>
+                        <p>
+                            <i class="-" href=""></i>เงื่อนไขการใช้บริการ</p>
+                        <p>
+                            <i class="-" href=""></i>นโยบายความเป็นส่วนตัว</p>
+
+
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">ช่องทางการติดต่อ</h6>
+                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <i class="fa fa-home mr-3"></i> THAI LAND, TH 10012</p>
+                        <p>
+                            <i class="fa fa-envelope mr-3"></i>Ddtravel@gmail.com</p>
+                        <p>
+                            <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <p>
+                            <i class="fa fa-print mr-3"></i> + 02 234 567 89</p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </footer>
+        <p>
+
+
+            <p><a href="index.php?logout='1'" class="btn btn-danger">Logout</a></p>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <script type="text/javascript" src="script.js"></script>
+
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

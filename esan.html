@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Devtravel</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+    body {
+        font-family: 'Kanit', sans-serif;
+        margin-left: 120px;
+        margin-right: 120px;
+        padding: 0%;
+    }
+    
+    .font-small {
+        background-color: #e1f5fe;
+    }
+    
+    button:hover {
+        transform: scale(1.1);
+    }
+    
+    li:hover {
+        transform: scale(1.2);
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/333.png" width="90px" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link " href="index.php">หน้าแรก </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="location.html">แนะนำสถานที่ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="hotel.html">แนะนำที่พัก</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       ภาค
+                      </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="north.html">เหนือ</a>
+                        <a class="dropdown-item" href="Bkk.html">กลาง</a>
+                        <a class="dropdown-item" href="esan.html">อีสาน</a>
+                        <a class="dropdown-item" href="South.html">ใต้</a>
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <a class="nav-link btn btn-dark " href="Booking.php">จองที่พัก</a>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="ค้นหาสถานที่หรืออื่นๆ" aria-label="ค้นหาสถานที่หรืออื่นๆ">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">ค้นหา</button>
+            </form>
+
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img height="620" width="400" src="https://img.wongnai.com/p/1920x0/2018/12/20/e668fd7b226646ca99533ed14d0081f6.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>WELCOME TO THAILAND!</h4>
+                    <p>
+                        <h4>
+                            <B>"อีสาน"</B>
+                        </h4>
+                    </p>
+                    <p>"credit : https://www.wongnai.com"</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img height="620" width="400" src="https://img.wongnai.com/p/1920x0/2018/07/06/8f75df3066f84d6391d41a216810a9df.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+
+                    <p>
+                        <h4>
+                            <B>"อีสาน"</B>
+                        </h4>
+                    </p>
+                    <p>"Credit : https://www.wongnai.com"</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img height="620" width="400" src="https://img.wongnai.com/p/1968x0/deleted/2018/07/06/4179c2bbb1b14724881ceb78437b1781.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+
+                    <p>
+                        <h4>
+                            <B>"อีสาน"</B>
+                        </h4>
+                    </p>
+                    <p>"Credit : https://www.wongnai.com"</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <p class="text-danger ">
+        <h1><b>ที่เที่ยวภาคอีสาน</h1></p>
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">ขอนแก่น</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">นครราชสีมา</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">อุบลราชธานี</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#" >อุดรธานี</a>
+                </li>
+              </ul>
+              <p>
+                ช่วงเทศกาล และวันหยุดยาวแบบนี้ ได้ที่เที่ยวกันหรือยังคะ ถ้ายังไม่มีโปรแกรมล่ะก็ เราขอชวนทุกคนมาเที่ยวแถบอีสานตอนเหนือ ที่เต็มไปด้วยที่เที่ยวทางธรรมชาติที่สมบูรณ์ และวัดวาอารามที่สวยงาม รวมถึงประเพณีอีสานที่น่าสนใจ แต่จะมีที่เที่ยวอีสานตรงไหนบ้าง... </p>
+
+              <div class="card-group">
+                <div class="card">
+                  <img src="https://img.wongnai.com/p/1968x0/2018/07/15/3a126f998f2447a29e17e6e8f7ed824a.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">ภูลมโล</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="https://img.wongnai.com/p/1968x0/2018/09/17/a94483495b204f64bd885a587a796a4f.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">ป่าคำชะโนด</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="https://img.wongnai.com/p/1968x0/2018/09/12/43a5093ea9274c0c8eb4e8492a3cbbe3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">พิพิธภัณฑ์สิรินธร</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-group">
+                <div class="card">
+                  <img src="https://img.wongnai.com/p/1968x0/2018/07/06/4d820abaf80641a1b2e81b755419d1ad.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">อุทยานแห่งชาติภูเรือ (ภูเรือ)</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="https://img.wongnai.com/p/1968x0/2018/06/04/f9f2b2cdcc694fffb4f23f6a88066fa2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">น้ำตกถ้ำพระ</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="https://img.wongnai.com/p/1968x0/2018/12/19/f48d7810d8564b578a53d720ad9cf6d9.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">ทะเลบัวแดง</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+             ข้อมูลจาก https://www.wongnai.com/
+
+
+
+
+
+             <p>
+                <div class="alert alert-info" role="alert">
+             ข้อมูลจังหวัดท่องเที่ยว
+            </div>
+                            <div class="row" style="font-size:12px; padding:20px;">
+                                <div class="item clearfix">
+                                    <div class="desc">
+                                        <strong>แอ่วเหนือ : </strong>
+                                                                                <a href="" target="_blank"> เชียงราย</a>
+                                                                                <a href="" target="_blank">, เชียงใหม่</a>
+                                                                                <a href="" target="_blank">, น่าน</a>
+                                                                                <a href="" target="_blank">, ปาย</a>
+                                                                                <a href="" target="_blank">, พะเยา</a>
+                                                                                <a href="" target="_blank">, แพร่</a>
+                                                                                <a href="" target="_blank">, แม่ฮ่องสอน</a>
+                                                                                <a href="" target="_blank">, ลำปาง</a>
+                                                                                <a href="" target="_blank">, ลำพูน</a>
+                                                                                <a href="" target="_blank">, อุตรดิตถ์</a>
+                                                                    </div><!-- desc -->
+                                </div><!-- item -->
+                                <div class="item clearfix">
+                                    <div class="desc">
+                                        <strong>ท่องภาคกลาง : </strong>
+                                                                                <a href="" target="_blank"> กรุงเทพมหานคร</a>
+                                                                                <a href="" target="_blank">, กาญจนบุรี</a>
+                                                                                <a href="" target="_blank">, กำแพงเพชร</a>
+                                                                                <a href="" target="_blank">, เขาค้อ</a>
+                                                                                <a href="" target="_blank">, ชะอำ</a>
+                                                                                <a href="" target="_blank">, ชัยนาท</a>
+                                                                                <a href="" target="_blank">, ตาก</a>
+                                                                                <a href="" target="_blank">, นครนายก</a>
+                                                                                <a href="" target="_blank">, นครปฐม</a>
+                                                                                <a href="" target="_blank">, นครสวรรค์</a>
+                                                                                <a href="" target="_blank">, นนทบุรี</a>
+                                                                                <a href="" target="_blank">, ปทุมธานี</a>
+                                                                                <a href="" target="_blank">, ประจวบคีรีขันธ์</a>
+                                                                                <a href="" target="_blank">, ปราณบุรี</a>
+                                                                                <a href="" target="_blank">, พระนครศรีอยุธยา</a>
+                                                                                <a href="" target="_blank">, พิจิตร</a>
+                                                                                <a href="" target="_blank">, พิษณุโลก</a>
+                                                                                <a href="" target="_blank">, เพชรบุรี</a>
+                                                                                <a href="" target="_blank">, เพชรบูรณ์</a>
+                                                                                <a href="" target="_blank">, ราชบุรี</a>
+                                                                                <a href="" target="_blank">, ลพบุรี</a>
+                                                                                <a href="" target="_blank">, สมุทรปราการ</a>
+                                                                                <a href="" target="_blank">, สมุทรสงคราม</a>
+                                                                                <a href="" target="_blank">, สมุทรสาคร</a>
+                                                                                <a href="" target="_blank">, สระบุรี</a>
+                                                                                <a href="" target="_blank">, สวนผึ้ง</a>
+                                                                                <a href="" target="_blank">, สังขละบุรี</a>
+                                                                                <a href="" target="_blank">, สิงห์บุรี</a>
+                                                                                <a href="" target="_blank">, สุโขทัย</a>
+                                                                                <a href="" target="_blank">, สุพรรณบุรี</a>
+                                                                                <a href="" target="_blank">, หัวหิน</a>
+                                                                                <a href="" target="_blank">, อัมพวา</a>
+                                                                                <a href="" target="_blank">, อ่างทอง</a>
+                                                                                <a href="" target="_blank">, อุทัยธานี</a>
+                                                                    </div><!-- desc -->
+                                </div><!-- item -->
+                                <div class="item clearfix">
+                                    <div class="desc">
+                                        <strong>เยือนถิ่นอีสาน : </strong>
+                                                                                <a href="" target="_blank"> กาฬสินธุ์</a>
+                                                                                <a href="" target="_blank">, ขอนแก่น</a>
+                                                                                <a href="" target="_blank">, เขาใหญ่</a>
+                                                                                <a href="" target="_blank">, ชัยภูมิ</a>
+                                                                                <a href="" target="_blank">, เชียงคาน</a>
+                                                                                <a href="" target="_blank">, นครพนม</a>
+                                                                                <a href="" target="_blank">, นครราชสีมา</a>
+                                                                                <a href="" target="_blank">, บึงกาฬ</a>
+                                                                                <a href="" target="_blank">, บุรีรัมย์</a>
+                                                                                <a href="" target="_blank">, มหาสารคาม</a>
+                                                                                <a href="" target="_blank">, มุกดาหาร</a>
+                                                                                <a href="" target="_blank">, ยโสธร</a>
+                                                                                <a href="" target="_blank">, ร้อยเอ็ด</a>
+                                                                                <a href="" target="_blank">, เลย</a>
+                                                                                <a href="" target="_blank">, วังน้ำเขียว</a>
+                                                                                <a href="" target="_blank">, ศรีสะเกษ</a>
+                                                                                <a href="" target="_blank">, สกลนคร</a>
+                                                                                <a href="" target="_blank">, สุรินทร์</a>
+                                                                                <a href="" target="_blank">, หนองคาย</a>
+                                                                                <a href="" target="_blank">, หนองบัวลำภู</a>
+                                                                                <a href="" target="_blank">, อำนาจเจริญ</a>
+                                                                                <a href="" target="_blank">, อุดรธานี</a>
+                                                                                <a href="" target="_blank">, อุบลราชธานี</a>
+                                                                    </div><!-- desc -->
+                                </div><!-- item -->
+                                <div class="item clearfix">
+                                    <div class="desc">
+                                        <strong>เที่ยวตะวันออก : </strong>
+                                                                                <a href="" target="_blank"> เกาะกูด</a>
+                                                                                <a href="" target="_blank">, เกาะช้าง</a>
+                                                                                <a href="" target="_blank">, เกาะล้าน</a>
+                                                                                <a href="" target="_blank">, เกาะสีชัง</a>
+                                                                                <a href="" target="_blank">, เกาะเสม็ด</a>
+                                                                                <a href="" target="_blank">, เกาะหมาก</a>
+                                                                                <a href="" target="_blank">, จันทบุรี</a>
+                                                                                <a href="" target="_blank">, ฉะเชิงเทรา</a>
+                                                                                <a href="" target="_blank">, ชลบุรี</a>
+                                                                                <a href="" target="_blank">, ตราด</a>
+                                                                                <a href="" target="_blank">, ปราจีนบุรี</a>
+                                                                                <a href="" target="_blank">, พัทยา</a>
+                                                                                <a href="" target="_blank">, ระยอง</a>
+                                                                                <a href="" target="_blank">, สระแก้ว</a>
+                                                                                <a href="" target="_blank">, สัตหีบ</a>
+                                                                    </div><!-- desc -->
+                                </div><!-- item -->
+                                <div class="item clearfix">
+                                    <div class="desc">
+                                        <strong>ล่องใต้ : </strong>
+                                                                                <a href="" target="_blank"> กระบี่</a>
+                                                                                <a href="" target="_blank">, เกาะพะงัน</a>
+                                                                                <a href="" target="_blank">, เกาะสมุย</a>
+                                                                                <a href="" target="_blank">, ชุมพร</a>
+                                                                                <a href="" target="_blank">, ตรัง</a>
+                                                                                <a href="" target="_blank">, นครศรีธรรมราช</a>
+                                                                                <a href="" target="_blank">, นราธิวาส</a>
+                                                                                <a href="" target="_blank">, ปัตตานี</a>
+                                                                                <a href="" target="_blank">, พังงา</a>
+                                                                                <a href="" target="_blank">, พัทลุง</a>
+                                                                                <a href="" target="_blank">, ภูเก็ต</a>
+                                                                                <a href="" target="_blank">, ยะลา</a>
+                                                                                <a href="" target="_blank">, ระนอง</a>
+                                                                                <a href="" target="_blank">, สงขลา</a>
+                                                                                <a href="" target="_blank">, สตูล</a>
+                                                                                <a href="" target="_blank">, สุราษฎร์ธานี</a>
+                                                                                <a href="" target="_blank">, หาดใหญ่</a>
+                                                                    </div><!-- desc -->
+                                </div><!-- item -->		
+                            </div><!-- .row -->
+                        </div>	
+                    </div><!-- .group -->
+                </div>
+            <hr>
+            
+
+            <!-- Footer -->
+            <footer class="page-footer font-small blue lighten-5">
+            
+              <div style="background-color: #21d192;">
+                <div class="container">
+            
+                  <!-- Grid row-->
+                  <div class="row py-4 d-flex align-items-center">
+            
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                      <h5 class="mb-0"><b>บริการของเรา (Services & Solutions)</b></h5>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                <!-- Facebook -->
+                <a href="#" target="_blank"><img height="20" src="img/facebook.png"></a>
+                <!-- Twitter -->
+                <a href="#" target="_blank"><img height="20" src="img/twitter.png"></a>
+
+                <!--Linkedin -->
+                <a href="#" target="_blank"><img height="20" src="img/instagram.png"></a>
+                <!--Instagram-->
+                <a href="#" target="_blank"><img height="20" src="img/youtube.png"></a>
+
+                <a href="#" target="_blank"><img height="20" src="img/google.png"></a>
+            </div>
+            <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+            </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left mt-5">
+
+                <!-- Grid row -->
+                <div class="row mt-3 dark-grey-text">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+                        <!-- Content -->
+                        <h6 class="text-uppercase font-weight-bold">ที่อยู่</h6>
+                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>ม.สิริเพลส นวนคร ต.เชียงรากน้อง อ.บางปะอิน จ.พระนครศรีอยุธยา 13180</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">เกี่ยวกับเรา</h6>
+                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <i class="-" href=""></i>เกี่ยวกับเรา</p>
+                        <p>
+                            <i class="-" href=""></i>เงื่อนไขการใช้บริการ</p>
+                        <p>
+                            <i class="-" href=""></i>นโยบายความเป็นส่วนตัว</p>
+
+
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">ช่องทางการติดต่อ</h6>
+                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <i class="fa fa-home mr-3"></i> THAI LAND, TH 10012</p>
+                        <p>
+                            <i class="fa fa-envelope mr-3"></i>gogotravel@gmail.com</p>
+                        <p>
+                            <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <p>
+                            <i class="fa fa-print mr-3"></i> + 02 234 567 89</p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            </footer>
+
+
+            <p><a href="index.php?logout='1'" class="btn btn-danger">Logout</a></p>
+
+
+
+
+
+
+
+
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
